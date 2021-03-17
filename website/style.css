@@ -4,11 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 
 
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+html, body {
+  background-color: rgb(27, 27, 27);
+}
 
 .container {
     position: absolute;
-    left: 0;
-    top:0;
+    left:0;
     width: 100%;
     height: 100%;
     background-color: rgb(27, 27, 27);
@@ -26,13 +33,15 @@ ul {
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     width: 100%;
+   
 }
 
-/* .fa-bars {
+.fa-bars {
   color:rgb(240, 228, 235);
   float: right;
+  padding: 10px;
  
-} */
+}
 
 /* refers to class 'topnav' */
 /* 'a' for anchor tag styles the text inside link */
@@ -71,10 +80,16 @@ this formats oversized background image*/
     font-family: 'Bebas Neue', cursive;
     font-size: 90px;
     color: #fff;
+    padding: 0px;
+    line-height: 3;
 }
 
-#home-title:hover {
-    color: rgb(31, 23, 39);
+/* #home-title:hover {
+  } */
+
+.textbox {
+  float:center;
+  justify-content: center;
 }
 
 .textbox a {
@@ -93,13 +108,13 @@ this formats oversized background image*/
 .textbox a:hover {
     text-decoration: underline;  
     background-color:rgb(197, 178, 193, 0.5);   
+    color:#fff;
 }
 
 .bottomnav {
-    padding: 8px;
+    padding: 0px;
     background-color:rgb(39, 37, 38);
     overflow:hidden;
-    position:fixed;
     bottom: 0;
     width: 100%;
 }
@@ -110,7 +125,7 @@ this formats oversized background image*/
     font-size: 18px;
     text-decoration: none;
     color: rgb(230, 198, 218);
-    padding: 10px 14px;
+    padding: 10px 8px;
     text-align: center;
 }
 
@@ -128,6 +143,7 @@ this formats oversized background image*/
 
 p {
   margin: 0.5em 0 0.5em 0;
+  font-family:'Bebas Neue';
 }
 
 .mailinglist form{
@@ -161,7 +177,96 @@ input[type="submit"]:hover
     font-size: 50px;
     color:rgb(240, 229, 238);
     text-align: center;
+    padding: 10px;
+    }
 
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+   
+  
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .slide-container .slide {
+    display: none;
+    width: 100%;
+    
+  }
+  
+  .slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  
+  .slide-container .slide img {
+    width: 100%;
+  }
+
+  .slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(209, 191, 191, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 4px;
+}
+
+.slide-container .next {
+  right: 4px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #3b3038;
+}
+
+.dots-container .dot.active {
+  border: 3px solid rgb(226, 176, 205);
+}
+
+img {
+  object-fit: contain;
+  width:100%;
+  height:350px;
+}
 

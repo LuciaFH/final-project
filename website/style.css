@@ -172,6 +172,7 @@ input[type="submit"]:hover {
   padding: 0px;
   margin: 30px 0px;
   color: #ffffff;
+  font-family: "Bebas Neue";
 }
 .aboutH2 {
   padding: 0px 0px 30px 50px;
@@ -185,12 +186,12 @@ input[type="submit"]:hover {
   font-family: "Bebas Neue";
   font-size: 20px;
   text-align: justify;
+  color: white;
 }
 
 .info {
   padding: 5px;
   margin-top: 0px;
-  color: white;
 }
 
 .carousel-inner {
@@ -203,6 +204,10 @@ input[type="submit"]:hover {
 
 .carousel-control-next-icon {
   margin-right: 35px;
+}
+
+.find {
+  color: white;
 }
 
 .video {

@@ -13,6 +13,58 @@ body {
   background-color: rgb(27, 27, 27);
 }
 
+/* Splash Page  */
+
+.containerVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.background {
+  object-fit: contain;
+}
+
+.btn {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(white, #9198e5);
+  color: black;
+}
+
+.headerVideo {
+  position: absolute;
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Homepage */
+
 .containerIndex {
   position: absolute;
   left: 0;

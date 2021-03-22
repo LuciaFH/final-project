@@ -19,6 +19,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: rgb(27, 27, 27);
+    
 }
 
 ul {
@@ -36,12 +37,12 @@ ul {
    
 }
 
-.fa-bars {
+/* .fa-bars {
   color:rgb(240, 228, 235);
   float: right;
   padding: 10px;
  
-}
+} */
 
 /* refers to class 'topnav' */
 /* 'a' for anchor tag styles the text inside link */
@@ -81,7 +82,6 @@ this formats oversized background image*/
     font-size: 90px;
     color: #fff;
     padding: 0px;
-    line-height: 3;
 }
 
 /* #home-title:hover {
@@ -89,7 +89,7 @@ this formats oversized background image*/
 
 .textbox {
   float:center;
-  justify-content: center;
+  justify-content:center;
 }
 
 .textbox a {
@@ -175,9 +175,10 @@ input[type="submit"]:hover
 #gallery-title{
     font-family:'Bebas Neue';
     font-size: 50px;
-    color:rgb(240, 229, 238);
+    color: white;
     text-align: center;
     padding: 10px;
+  
     }
 
 @keyframes fade {
@@ -190,7 +191,6 @@ input[type="submit"]:hover
     }
   }
    
-  
   .slide-container {
     display: flex;
     justify-content: center;
@@ -265,8 +265,21 @@ input[type="submit"]:hover
 }
 
 img {
+  float: center;
   object-fit: contain;
-  width:100%;
+  width: 350px;
   height:350px;
+  display:block;
+} 
+
+#photo-subtitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #fff;
+  padding: 0px;
 }
 
+.photo-section {
+  padding-top: em(70);
+  text-align: center;
+}

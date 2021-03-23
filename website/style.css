@@ -8,11 +8,18 @@
   margin-top: 0;
 }
 
-html,
-body {
+html, body {
   background-color: rgb(27, 27, 27);
 }
 
+.container {
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+}
+    
 /* Splash Page  */
 
 .containerVideo {
@@ -87,11 +94,12 @@ ul {
   width: 100%;
 }
 
-.fa-bars {
-  color: rgb(240, 228, 235);
+/* .fa-bars {
+  color:rgb(240, 228, 235);
   float: right;
   padding: 10px;
-}
+ 
+} */
 
 /* refers to class 'topnav' */
 /* 'a' for anchor tag styles the text inside link */
@@ -127,18 +135,19 @@ this formats oversized background image*/
 }
 
 #home-title {
-  font-family: "Bebas Neue", cursive;
-  font-size: 90px;
-  color: #fff;
-  padding: 0px;
-  line-height: 3;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    color: #fff;
+    padding: 0px;
+    margin-top: 100px;
 }
 /* #home-title:hover {
   } */
 
 .textbox {
-  float: center;
-  justify-content: center;
+  float:center;
+  justify-content:center;
+  margin-bottom:50px;
 }
 
 .textbox a {
@@ -166,24 +175,95 @@ this formats oversized background image*/
   overflow: hidden;
   bottom: 0;
   width: 100%;
+  position:sticky;
+}
+
+.bottomnav a {
+  float: left;
+  font-family: "Bebas Neue", cursive;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(230, 198, 218);
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.bottomnav a:hover {
+  text-decoration: underline;
+}
+
+.mailing-container {
+  border-top: 0.2px solid rgba(209, 191, 191, 0.8);
+}
+
+.mailinglist {
+  padding: 50px;
+  text-align: center;
+  justify-content:center;
+  position:relative;
+  background-color:  rgb(27, 27, 27);
+  margin-bottom: 100px;
+  margin-top:100px;
+  margin-right: 100px;
+  margin-left:100px
 }
 
 .mailinglist p {
-  font-family: "Bebas Neue";
   padding: 20px;
   color: whitesmoke;
   font-size: 20px;
-  background-color: transparent;
+  border: 1px solid rgb(247, 243, 246);
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
 }
 
-p {
-  margin: 0.5em 0 0.5em 0;
-  font-family: "Bebas Neue";
+.mailinglist p:hover {
+  background-color:rgb(65, 50, 60);
 }
 
 .mailinglist form {
   font-family: "Bebas Neue";
   border: hotpink;
+}
+
+.social-media-container {
+  border-top: 0.2px solid rgba(209, 191, 191, 0.8);  
+}
+
+.social-media {
+  padding:50px;
+  text-align:center;
+  justify-content:center;
+  position:relative;
+  background-color:  rgb(27, 27, 27);
+  /* width:200px; want to resize it but can't get it central to the page*/
+}
+
+.social-media p {
+  padding: 20px;
+  color: whitesmoke;
+  font-size: 20px;
+  border: 1px solid rgb(247, 243, 246);
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;  
+  margin-bottom: 100px;
+  margin-top:100px;
+  margin-right: 100px;
+  margin-left:100px;
+}
+
+.social-media a {
+  color: whitesmoke;
+}
+
+
+.address footer {
+  text-align: center;
+  justify-content:center;
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
 }
 
 input[type="text"] {
@@ -202,6 +282,7 @@ input[type="submit"]:hover {
   background-color: rgb(139, 124, 136);
 }
 
+
 /* ABOUT */
 
 .aboutHeader {
@@ -218,6 +299,7 @@ input[type="submit"]:hover {
   font-size: 40px;
   font-style: italic;
   color: #ffffff;
+  font-family: "Bebas Neue";
 }
 .container-about {
   padding: 0px 60px 60px 60px;
@@ -279,31 +361,44 @@ footer {
 }
 
 /* Photo Gallery */
-#gallery-title {
-  font-family: "Bebas Neue";
-  font-size: 50px;
-  color: rgb(240, 229, 238);
-  text-align: center;
-  padding: 10px;
-}
+#gallery-title{
+    font-family:'Bebas Neue';
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top:30px;
+
+    }
 
 @keyframes fade {
-  0% {
-    opacity: 0;
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+   
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .slide-container .slide {
+    display: none;
+    width: 100%;
+    
+  }
+  
+  .slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   }
 
-  100% {
-    opacity: 1;
-  }
-}
-
-.slide-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
-}
 
 .slide-container .slide {
   display: none;
@@ -370,11 +465,31 @@ footer {
 }
 
 img {
+  float: center;
   object-fit: contain;
-  width: 100%;
-  height: 350px;
-}
+  width: 350px;
+  height:350px;
+  display:block;
+} 
 
+
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; 
+  color: white;
+  font-family: 'Bebas Neue';
+  margin-right:100px;
+  margin-left:100px;
+  margin-bottom:100px;
+  align-content: center;
+  justify-content:center;
+  position:relative;
+  text-align: center;
+  /* width:200px; want to resize it but can't get it central to the page*/
+}
+  
 /*EVENT*/
 .eventstitle {
   font-family: "Bebas Neue";
@@ -416,8 +531,21 @@ img {
   font-size: 35px;
 }
 
-.column_75 {
-  width: 100%;
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }
 
 .column_25 {

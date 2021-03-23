@@ -133,26 +133,6 @@ this formats oversized background image*/
   padding: 0px;
   line-height: 3;
 }
-
-.container-home {
-}
-
-.homeImage {
-  max-width: 100%;
-}
-
-.homeTitle {
-  font-size: 20px;
-  padding-left: 20px;
-  color: white;
-  font-family: "Bebas Neue";
-}
-
-.homeText {
-  color: white;
-  font-family: "Bebas Neue";
-}
-
 /* #home-title:hover {
   } */
 
@@ -460,7 +440,7 @@ img {
 }
 
 .footer-heading {
-  font-family:"Bebas Neue";
+  font-family: "Bebas Neue";
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -27,7 +27,7 @@
         <div class="topnav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="photogallery.html">Photo Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -39,13 +39,14 @@
     <div>
         <h1 class="headerContact">CONTACT</h1>
     </div>
-    <div class="row">
-        <div class="column">
 
     <div>
         <h2 class="h2Contact">Get in Touch</h2>
     </div>
     
+<div class="contact2-container">
+<div class="col-sm-6">
+    <div class="card text-white bg-primary mb-3" style="max-width: 60rem;">
     <div class="containerContact">
         <form action="action_page.php" id="form">
     
@@ -62,7 +63,7 @@
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
             </select>
-
+    
             <label for="subject">Subject</label>
             <input type="text" id="sject" name="subject" placeholder="Message subject">
     
@@ -74,18 +75,25 @@
         </form>
     </div>
     </div>
-    <div class="column">
-    <div>
-        <h3 class="h3Contact">How to Find Us</h3>
     </div>
-    <div>
-        <iframe id="googleMap"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.731846897512!2d0.003758!3d51.5190322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe527c9bb00728b9e!2sFOLD!5e0!3m2!1sen!2suk!4v1616451537569!5m2!1sen!2suk"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+
+    <div class="col-sm-6">
+        <div class="card text-white bg-secondary mb-3" style="max-width: 60rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h3 class="card-title">How to Find Us</h3>
+                <div class="googleMap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.731846897512!2d0.003758!3d51.5190322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe527c9bb00728b9e!2sFOLD!5e0!3m2!1sen!2suk!4v1616451537569!5m2!1sen!2suk"
+                        width="600" height="507" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        </div>
+        </div>
     </div>
+    </div>
+
     <div>
         <h4 class="h4Contact">Stay in Touch</h4>
-    </div>
+        <p class="contactEmail">Email Us at info@fold.london</p>
     </div>
 </body>
 </html>

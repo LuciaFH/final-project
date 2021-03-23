@@ -617,7 +617,7 @@ input[id="confirm"]:hover {
   padding: 20px;
 }
 
-.h3Contact {
+.card-title {
   padding: 0px;
   margin: 30px 0px;
   color: #ffffff;
@@ -633,7 +633,8 @@ input[id="confirm"]:hover {
   font-family: "Bebas Neue";
 }
 
-.containerMap {
+.googleMap {
+  display: flex;
   z-index: 3;
   height: 100%;
   width: 100%;
@@ -654,4 +655,13 @@ input[id="confirm"]:hover {
 
 .column {
   flex: 50%;
+}
+
+.contactEmail {
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  color: white;
 }

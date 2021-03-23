@@ -170,6 +170,38 @@ this formats oversized background image*/
   border: hotpink;
 }
 
+.social-media-container {
+  border-top: 0.2px solid rgba(209, 191, 191, 0.8);  
+}
+
+.social-media {
+  padding:50px;
+  text-align:center;
+  justify-content:center;
+  position:relative;
+  background-color:  rgb(27, 27, 27);
+  /* width:200px; want to resize it but can't get it central to the page*/
+}
+
+.social-media p {
+  padding: 20px;
+  color: whitesmoke;
+  font-size: 20px;
+  border: 1px solid rgb(247, 243, 246);
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;  
+  margin-bottom: 100px;
+  margin-top:100px;
+  margin-right: 100px;
+  margin-left:100px;
+}
+
+.social-media a {
+  color: whitesmoke;
+}
+
+
 .address footer {
   text-align: center;
   justify-content:center;
@@ -193,6 +225,7 @@ input[type="submit"]:hover {
   background-color: rgb(139, 124, 136);
 }
 
+
 /* ABOUT */
 
 .aboutHeader {
@@ -208,6 +241,7 @@ input[type="submit"]:hover {
   padding: 0px 0px 30px 50px;
   font-style: italic;
   color: #ffffff;
+  font-family: "Bebas Neue";
 }
 
 .containerAbout {
@@ -269,7 +303,7 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top:30px;
-  
+
     }
 
 @keyframes fade {
@@ -373,14 +407,37 @@ img {
   display:block;
 } 
 
-#photo-subtitle {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 50px;
-  color: #fff;
-  padding: 0px;
+
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; 
+  color: white;
+  font-family: 'Bebas Neue';
+  margin-right:100px;
+  margin-left:100px;
+  margin-bottom:100px;
+  align-content: center;
+  justify-content:center;
+  position:relative;
+  text-align: center;
+  /* width:200px; want to resize it but can't get it central to the page*/
 }
 
-.video-section {
-  padding-top: em(70);
-  text-align: center;
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }

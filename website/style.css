@@ -321,15 +321,28 @@ input[type="submit"]:hover {
 
 .foundersImage {
   display: flex;
+  margin: 0 auto;
 }
 
 .containerImage {
-  margin: 20px;
-  padding: 35px;
+  padding: 20px 20px 20px 60px;
 }
 
 .aboutImage {
   display: flex;
+  margin: 0 auto;
+}
+
+.aboutImage1 {
+  margin: 0px 60px;
+  width: 400px;
+  height: 400px;
+}
+
+.aboutImage2 {
+  margin: 0px 30px;
+  width: 400px;
+  height: 400px;
 }
 
 .find {

@@ -18,6 +18,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: rgb(27, 27, 27);
+}
     
 /* Splash Page  */
 
@@ -140,29 +141,6 @@ this formats oversized background image*/
     padding: 0px;
     margin-top: 100px;
 }
-
-#home-title:hover {
-  color:rgb(65, 50, 60);
-  }
-.container-home {
-}
-
-.homeImage {
-  max-width: 100%;
-}
-
-.homeTitle {
-  font-size: 20px;
-  padding-left: 20px;
-  color: white;
-  font-family: "Bebas Neue";
-}
-
-.homeText {
-  color: white;
-  font-family: "Bebas Neue";
-}
-
 /* #home-title:hover {
   } */
 
@@ -504,6 +482,7 @@ img {
   position:relative;
   text-align: center;
   /* width:200px; want to resize it but can't get it central to the page*/
+}
   
 /*EVENT*/
 .eventstitle {
@@ -561,6 +540,8 @@ img {
 /* When moving the mouse over the close button */
 .closebtn:hover {
   color: black;
+}
+
 .column_25 {
   width: 100%;
   padding-top: 500px;
@@ -587,7 +568,7 @@ img {
 }
 
 .footer-heading {
-  font-family:"Bebas Neue";
+  font-family: "Bebas Neue";
   display: flex;
   flex-direction: column;
   justify-content: center;

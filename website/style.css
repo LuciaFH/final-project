@@ -323,16 +323,13 @@ input[type="submit"]:hover {
   display: flex;
 }
 
-.aboutImage1 {
-  display: flex;
+.containerImage {
   margin: 20px;
   padding: 35px;
 }
 
-.aboutImage2 {
+.aboutImage {
   display: flex;
-  margin: 20px;
-  padding: 35px;
 }
 
 .find {

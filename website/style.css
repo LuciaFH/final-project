@@ -141,8 +141,10 @@ this formats oversized background image*/
     padding: 0px;
     margin-top: 100px;
 }
-/* #home-title:hover {
-  } */
+
+#home-title:hover {
+  color: #3b3038;
+  }
 
 .textbox {
   float:center;

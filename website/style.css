@@ -249,24 +249,8 @@ input[type="submit"]:hover {
   margin-top: 0px;
 }
 
-.container-image {
-  margin: 20px;
-  padding-left: 30px;
-}
-
-.about1 {
-  height: 200px;
-  margin: 10px;
-}
-
-.about2 {
-  height: 200px;
-  margin: 10px;
-}
-
-.about3 {
-  height: 200px;
-  margin: 10px;
+.foundersImage {
+  display: flex;
 }
 
 .aboutImage {

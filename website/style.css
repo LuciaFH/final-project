@@ -491,6 +491,23 @@ img {
   text-align: center;
   /* width:200px; want to resize it but can't get it central to the page*/
 }
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
   
 /*EVENT*/
 .eventstitle {
@@ -501,8 +518,16 @@ img {
 
 .eventsinfo {
   font-family: "Bebas Neue";
-  font-size: 90px;
+  font-size: 100px;
   color: white;
+}
+
+#crucast{
+  width: max-content;
+}
+
+#dropout {
+  width: max-content;
 }
 
 .eventdetails {
@@ -521,6 +546,51 @@ img {
   height: 100%;
 }
 
+.row:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.1s ease-in-out;
+}
+
+.column_75 {
+  width: fit-content;
+}
+
+.column_empty {
+  width: 100%;
+}
+
+#crucast_empty {
+  width: 2000px;
+}
+
+.column_25 {
+  width: 100%;
+  padding-top: 500px;
+  padding: 2rem 6rem 2rem 0;
+  border-left: white 2px solid;
+}
+
+#row_1 {
+  background-image: url("https://static01.nyt.com/images/2019/10/31/arts/16floatingpoints1/merlin_162580950_8e7b39b9-46b8-4a83-b853-33a81b56a85f-superJumbo.jpg");
+  object-fit: cover;
+  padding: 50px;
+
+}
+
+#row_2 {
+  background-image: url("https://static.anjunabeats.com/assets/banners/other_websites/anjunadeep-10/img/og-image.jpg");
+  object-fit: cover;
+}
+
+#row_3 {
+  background-image: url("https://edm.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTc1OTgwNDk1NjA2MTMwMDg5/000041160013.jpg");
+}
+
+#row_4 {
+  background-image: url("https://lakota.co.uk/app/uploads/2018/09/HNKC_180720_DROPOUTDISCO_Hunee-8844.jpg");
+  max-height: 80%;
+}
 .eventbutton {
   background-color: #fff;
   border: none;
@@ -533,29 +603,15 @@ img {
   font-size: 35px;
 }
 
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 30px;
-  line-height: 20px;
+.eventbutton:hover {
   cursor: pointer;
-  transition: 0.3s;
+  background-color: black;
+  border: white 1px solid;
+  color: white;
+  transition: 0.15s ease-in;
 }
 
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-}
 
-.column_25 {
-  width: 100%;
-  padding-top: 500px;
-  padding: 2rem 6rem 2rem 0;
-  border-left: white 2px solid;
-}
 
 /*Event Footer*/
 .footer-container {
@@ -576,7 +632,7 @@ img {
 }
 
 .footer-heading {
-  font-family: "Bebas Neue";
+  font-family:"Bebas Neue";
   display: flex;
   flex-direction: column;
   justify-content: center;

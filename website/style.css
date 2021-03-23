@@ -134,6 +134,25 @@ this formats oversized background image*/
   line-height: 3;
 }
 
+.container-home {
+}
+
+.homeImage {
+  max-width: 100%;
+}
+
+.homeTitle {
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+  font-family: "Bebas Neue";
+}
+
+.homeText {
+  color: white;
+  font-family: "Bebas Neue";
+}
+
 /* #home-title:hover {
   } */
 
@@ -167,20 +186,6 @@ this formats oversized background image*/
   overflow: hidden;
   bottom: 0;
   width: 100%;
-}
-
-.bottomnav a {
-  float: left;
-  font-family: "Bebas Neue", cursive;
-  font-size: 18px;
-  text-decoration: none;
-  color: rgb(230, 198, 218);
-  padding: 10px 8px;
-  text-align: center;
-}
-
-.bottomnav a:hover {
-  text-decoration: underline;
 }
 
 .mailinglist p {

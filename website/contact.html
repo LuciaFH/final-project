@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+
+    <script>
+        function initMap() {
+            const uluru = { lat: -25.344, lng: 131.036 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="aboutHero">
+        <!-- class 'topnav' - for formatting the navigation bar elements -->
+        <div class="topnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="photogallery.html">Photo Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- 'fa-bars' - navigation bar lines -->
+                <!-- <i class="fa fa-bars"></i>  commented out because haven't got it right!-->
+            </ul>
+        </div>
+    <div class="container-contact">
+    <div>
+        <h1 class="headerContact">CONTACT</h1>
+    </div>
+
+    <div>
+        <h2 class="h2Contact">Get in Touch</h2>
+    </div>
+    
+<div class="contact2-container">
+<div class="col-sm-6">
+    <div class="card text-white bg-primary mb-3" style="max-width: 60rem;">
+    <div class="containerContact">
+        <form action="action_page.php" id="form">
+    
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+    
+            <label for="subject">Subject</label>
+            <input type="text" id="sject" name="subject" placeholder="Message subject">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+    
+            <input type="submit" value="Submit" id="confirm">
+    
+        </form>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="card text-white bg-secondary mb-3" style="max-width: 60rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h3 class="card-title">How to Find Us</h3>
+                <div class="googleMap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.731846897512!2d0.003758!3d51.5190322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe527c9bb00728b9e!2sFOLD!5e0!3m2!1sen!2suk!4v1616451537569!5m2!1sen!2suk"
+                        width="600" height="507" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <h4 class="h4Contact">Stay in Touch</h4>
+        <p class="contactEmail">Email Us at info@fold.london</p>
+    </div>
+</body>
+</html>

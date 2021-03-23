@@ -535,7 +535,7 @@ img {
   font-size: 30px;
   color: white;
 }
-.row {
+.rowevent {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -546,7 +546,7 @@ img {
   height: 100%;
 }
 
-.row:hover {
+.rowevent:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   transition: 0.1s ease-in-out;

@@ -13,6 +13,58 @@ body {
   background-color: rgb(27, 27, 27);
 }
 
+/* Splash Page  */
+
+.containerVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.background {
+  object-fit: contain;
+}
+
+.btn {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(white, #9198e5);
+  color: black;
+}
+
+.headerVideo {
+  position: absolute;
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Homepage */
+
 .containerIndex {
   position: absolute;
   left: 0;
@@ -82,6 +134,25 @@ this formats oversized background image*/
   line-height: 3;
 }
 
+.container-home {
+}
+
+.homeImage {
+  max-width: 100%;
+}
+
+.homeTitle {
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+  font-family: "Bebas Neue";
+}
+
+.homeText {
+  color: white;
+  font-family: "Bebas Neue";
+}
+
 /* #home-title:hover {
   } */
 
@@ -115,20 +186,6 @@ this formats oversized background image*/
   overflow: hidden;
   bottom: 0;
   width: 100%;
-}
-
-.bottomnav a {
-  float: left;
-  font-family: "Bebas Neue", cursive;
-  font-size: 18px;
-  text-decoration: none;
-  color: rgb(230, 198, 218);
-  padding: 10px 8px;
-  text-align: center;
-}
-
-.bottomnav a:hover {
-  text-decoration: underline;
 }
 
 .mailinglist p {
@@ -175,8 +232,10 @@ input[type="submit"]:hover {
   font-family: "Bebas Neue";
   font-size: 80px;
 }
+
 .aboutH2 {
   padding: 0px 0px 30px 50px;
+  font-size: 40px;
   font-style: italic;
   color: #ffffff;
 }
@@ -195,16 +254,17 @@ input[type="submit"]:hover {
   margin-top: 0px;
 }
 
-.carousel-inner {
-  padding: 0px 50px;
+.foundersImage {
+  display: flex;
 }
 
-.carousel-control-prev-icon {
-  margin-left: 35px;
-}
-
-.carousel-control-next-icon {
-  margin-right: 35px;
+.aboutImage {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
 }
 
 .find {
@@ -356,14 +416,13 @@ img {
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-
 }
 
 .eventbutton {
   background-color: #fff;
   border: none;
   color: black;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -386,7 +445,6 @@ img {
 .footer-container {
   background-color: black;
   padding: 0 0 0.5rem 0;
-
 }
 
 .footer {
@@ -399,7 +457,6 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
-
 }
 
 .footer-heading {
@@ -424,7 +481,6 @@ img {
 .footer-submit {
   margin-bottom: 2rem;
   padding-bottom: 3rem;
-
 }
 
 #footer-email {
@@ -439,7 +495,7 @@ img {
 
 #footer-email::placeholder {
   color: black;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 #footer-email-submit-btn {
@@ -448,7 +504,7 @@ img {
   border-radius: 4px;
   background-color: white;
   border: none;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 2rem;
 }
 
@@ -458,4 +514,180 @@ img {
   border: white 1px solid;
   color: white;
   transition: 0.15s ease-in;
+}
+
+/* Contact */
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.containerContact {
+  font-family: "Bebas Neue";
+  font-size: 23px;
+}
+
+.container-contact {
+  padding: 0px 12px;
+  margin: 0px 104px;
+}
+
+.headerContact {
+  text-decoration: underline;
+  padding: 0px;
+  margin: 30px 0px;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 80px;
+}
+
+.h2Contact {
+  padding: 0px;
+  margin: 30px 0px;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Bebas Neue";
+}
+
+input[id="fname"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+input[id="lname"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+input[id="country"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+input[id="sject"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 18px;
+}
+
+input[id="confirm"] {
+  background-color: rgb(107, 104, 104);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[id="confirm"]:hover {
+  background-color: black;
+  font-size: 20px;
+}
+
+#country {
+  font-family: "Bebas Neue";
+}
+
+#message {
+  font-family: "Bebas Neue";
+}
+
+.containerContact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.card-title {
+  padding: 0px;
+  margin: 30px 0px;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Bebas Neue";
+}
+
+.h4Contact {
+  padding: 0px;
+  margin: 30px 0px;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Bebas Neue";
+}
+
+.googleMap {
+  display: flex;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  vertical-align: baseline;
+  touch-action: pan-x pan-y;
+}
+
+.row {
+  display: flex;
+  border: none;
+  padding-top: 10px;
+}
+
+.column {
+  flex: 50%;
+}
+
+.contactEmail {
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  color: white;
 }
